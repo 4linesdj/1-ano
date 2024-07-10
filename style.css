@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Playwrite+AU+VIC:wght@100..400&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
+:root {
+    --cor-fundo: #7469B6;
+    --cor-titulo-destaque: #E1AFD1;
+    --cor-titulo: #FFE6E6;
+    --cor-hover: #AD88C6;
+    
+
+    --fonte-primaria: "Karla", sans-serif;;
+    --fonte-pergunta: "Playwrite DE Grund", cursive;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho {
+    padding: 2% 0 0% 15%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__link {
+    font-family: var(--fonte-primaria);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor-titulo-destaque);
+    text-decoration: none;
+}
+
+.apresentacao {
+    height: 87.9vh;
+    padding: 0 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 82px;
+    text-align: center;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.8rem;
+    font-family: var(--fonte-primaria);
+}
+
+.imagem {
+    height: 80vh;
+    border-radius: 16px;
+    gap: 16px;
+}
+
+.conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--cor-titulo);
+}
+
+.apresentacao__conteudo__texto__p {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+
+.conteudo__seven {
+    text-align: left;
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    color: var(--cor-titulo);
+}
+
+.titulo__principal {
+    color: var(--cor-titulo);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+.titulo {
+    height: 70px;
+    color: var(--cor-titulo);
+    font-family: var(--fonte-primaria);
+    font-size: 2.25rem;
+}
+
+.titulo-destaque {
+    color: var(--cor-titulo-destaque);
+}
+
+.caixa {
+    display: flex;
+    text-align: center;
+    padding: 0 10%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.pergunta {
+    color: var(--cor-titulo-destaque);
+    font-family: var(--fonte-pergunta);
+    font-size: 1.8rem;
+}
+
+.buttons__menu {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    padding: 8.5px 0.5;
+    border: 2px solid var(--cor-titulo);
+    width: 100px;
+    text-decoration: none;
+    color: var(--cor-titulo);
+    margin: auto;
+    
+}
+
+.button__no {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+    border: 2px solid var(--cor-titulo);
+    text-decoration: none;
+    color: var(--cor-titulo);
+    margin: auto;
+    padding: 0.5px 20px;
+    position: absolute;
+    cursor: pointer;
+    transition: left 0.1s ease, top 0.1s ease;
+    top: 10px;
+    left: 50px;
+}
+
+.buttons:hover {
+    background-color: var(--cor-hover);
+}
+
+.rodape {
+    padding: 17px;
+    color: var(--cor-fundo);
+    background-color: var(--cor-titulo-destaque);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-weight: 615;
+    font-size: 1.12rem;
+    gap: 2px;
+}
+
+.link {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: var(--fonte-primaria);
+    padding: 8.5px 0.5;
+    border: 2px solid var(--cor-titulo);
+    width: 200px;
+    text-decoration: none;
+    color: var(--cor-titulo);
+    margin: auto;
+    gap: 20px;
+}
+
+.link:hover {
+    background-color: var(--cor-hover);
+}
+
+.gif-container {
+    width: 100%; /* Defina o tamanho adequado para o seu GIF */
+    height: 0; /* Defina o tamanho adequado para o seu GIF */
+    background-image: url('https://giphy.com/embed/bLaojSzPMOAaK3oXE8/video'); /* Substitua pelo caminho do seu arquivo GIF */
+    background-size: cover; /* Ajusta o tamanho do GIF para cobrir o contêiner */
+}
+

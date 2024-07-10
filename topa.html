@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 ano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__link" href="index.html">Home</a>
+            <a class="cabecalho__link" href="seven.html">Voltar</a>
+        </nav>
+    </header>
+    <main class="apresentacao">
+        <section class="conteudo">
+            <h1 class="titulo__principal">RENOVAÇÃO DE CONTRATO</h1>
+                <div class="caixa">
+                    <h2 class="pergunta">Aceita renovar nosso amor por mais 365 dias?</h2>
+                    <div class="buttons__menu">
+                            <a class="buttons" href="gif.html">Sim</a>
+                            <a class="button__no" href="#" onmouseover="mudarPosicao(this)">Não</a>
+                    </div>
+                </div>
+        </section>
+        <img src="" alt="">
+    </main>
+<footer class="rodape">
+    <p>Desenvolvido por Aline Santos</p>
+</footer>
+
+<script>
+    function mudarPosicao(elemento) {
+        var novaPosX = Math.random() * (window.innerWidth - elemento.clientWidth);
+        var novaPosY = Math.random() * (window.innerHeight - elemento.clientHeight);
+        
+        elemento.style.left = novaPosX + 'px';
+        elemento.style.top = novaPosY + 'px';
+    }
+</script>
+</body>
+</html>
+
